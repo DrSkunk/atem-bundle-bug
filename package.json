@@ -1,0 +1,20 @@
+{
+  "name": "atem-bundle-bug",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "rm -rf dist && npm run build && node dist/index.js",
+    "build": "rollup -c"
+  },
+  "author": "Sebastiaan Jansen",
+  "type": "module",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "rollup": "^3.23.0"
+  },
+  "dependencies": {
+    "atem-connection": "^3.2.0"
+  }
+}
